@@ -1,0 +1,165 @@
+<html>
+<html>
+<head>
+<title>Contact Us | Salman Salon</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+body{
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background-image:url('BG.jpg');
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+/* Overlay */
+.overlay{
+    background:rgba(0,0,0,0.65);
+    min-height:100vh;
+    padding:60px 20px;
+}
+
+/* Contact Box */
+.contact-box{
+    max-width:900px;
+    margin:auto;
+    background:#fff;
+    padding:45px;
+    border-radius:18px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.3);
+}
+
+/* Title */
+h1{
+    text-align:center;
+    color:#c2365b;
+    font-size:40px;
+    margin-bottom:10px;
+}
+.subtitle{
+    text-align:center;
+    color:#777;
+    margin-bottom:30px;
+}
+
+/* Info Grid */
+.info-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+    margin-bottom:40px;
+}
+
+/* Info Card */
+.info-card{
+    background:#fafafa;
+    padding:25px;
+    border-radius:14px;
+    text-align:center;
+    box-shadow:0 6px 15px rgba(0,0,0,0.08);
+}
+
+.info-card h3{
+    color:#c2185b;
+    margin-bottom:10px;
+}
+
+.info-card p{
+    margin:6px 0;
+    color:#333;
+}
+
+/* Links */
+a{
+    color:#c2185b;
+    text-decoration:none;
+    font-weight:500;
+}
+a:hover{
+    text-decoration:underline;
+}
+
+/* Map */
+.map-box h2{
+    text-align:center;
+    color:#c2185b;
+    margin-bottom:15px;
+}
+iframe{
+    width:100%;
+    height:350px;
+    border:0;
+    border-radius:14px;
+}
+
+/* Responsive */
+@media(max-width:600px){
+    h1{
+        font-size:32px;
+    }
+    .contact-box{
+        padding:30px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="overlay">
+    <div class="contact-box">
+
+        <h1>Contact Us</h1>
+        <p class="subtitle">We’re here to help you look your best</p>
+
+        <!-- CONTACT DETAILS -->
+        <div class="info-grid">
+
+            <div class="info-card">
+                <h3>📍 Address</h3>
+                <p>Salman Salon</p>
+                <p>Ahmedgarh, Punjab</p>
+                <p>India</p>
+            </div>
+
+            <div class="info-card">
+                <h3>📞 Phone</h3>
+                <p>
+                    <a href="tel:+918360971064">+918360971064</a>
+                </p>
+                <p>
+                    <a href="https://wa.me/918360971064" target="_blank">
+                        WhatsApp Chat
+                    </a>
+                </p>
+            </div>
+
+            <div class="info-card">
+                <h3>✉️ Email</h3>
+                <p>
+                    <a href="mailto:salmansalon@gmail.com">
+                        salmansalon@gmail.com
+                    </a>
+                </p>
+                <p>24/7 Support</p>
+            </div>
+
+        </div>
+
+        <!-- MAP -->
+        <div class="map-box">
+            <h2>Find Us on Google Maps</h2>
+            <iframe
+                src="https://www.google.com/maps?q=Ahmedgarh&output=embed"
+                loading="lazy">
+            </iframe>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us | Salman Salon</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-image: url('BG.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .overlay {
+            background: rgba(0, 0, 0, 0.6);
+            min-height: 100vh;
+            padding: 60px 20px;
+        }
+
+        .about-box {
+            max-width: 950px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.96);
+            padding: 50px;
+            border-radius: 18px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        /* LOGO */
+        .logo {
+            display: block;
+            margin: 0 auto 20px;
+	    align:center;
+            max-width: 50px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 42px;
+            color: #c2185b;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        .owner {
+            text-align: center;
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        .divider {
+            width: 80px;
+            height: 4px;
+            background: #c2185b;
+            margin: 20px auto 40px;
+            border-radius: 10px;
+        }
+
+        p {
+            font-size: 17px;
+            line-height: 1.8;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .highlight {
+            color: #c2185b;
+            font-weight: 600;
+        }
+
+        /* MAP */
+        .map-box {
+            margin-top: 40px;
+        }
+
+        .map-box h2 {
+            text-align: center;
+            color: #c2185b;
+            margin-bottom: 20px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 350px;
+            border: 0;
+            border-radius: 12px;
+        }
+
+        @media (max-width: 600px) {
+            .about-box {
+                padding: 30px;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="overlay">
+    <div class="about-box">
+
+        <!-- LOGO -->
+        <img src="academy logo.jpg" >
+
+        <h1>ABOUT US</h1>
+        <div class="owner">
+            Owned & Managed by <strong>Salman Khan <br>S/O Rabbi Khan</strong> 
+            
+        </div>
+
+        <div class="divider"></div>
+
+        <p>
+            Awards Press <span class="highlight">Salman Salon</span> is a one stop destination for premium 
+            bridal makeup, hair, skin, body, hand and feet services. Started in the year 
+            <span class="highlight">2010</span> in the city beautiful <span class="highlight">Ahmedgarh</span>, 
+            the salon was established with the motive to provide top-notch services to clients from all walks of life.
+        </p>
+
+        <p>
+            The salon operates from a premium designed space measuring 
+            <span class="highlight">600 sq. feet</span>, offering a comfortable and hygienic environment.
+            Since its inception, Salman Salon has been recognized for its 
+            high-quality service standards and safe salon practices, strictly following Indian beauty and hygiene norms.
+        </p>
+
+        <p>
+            Clients from across the city and nearby regions regularly visit Salman Salon for professional care.
+            Today, <span class="highlight">Salman Salon Ahmedgarh</span> is proudly known as one of the 
+            best salons for hair, makeup, skin and beauty services, delivering excellence with trust and expertise.
+        </p>
+
+        <!-- GOOGLE MAP -->
+        <div class="map-box">
+            <h2>Find Us on Google Maps</h2>
+            <iframe 
+                src="https://www.google.com/maps?q=Ahmedgarh&output=embed"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

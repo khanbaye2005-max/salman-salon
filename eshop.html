@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Hair Salon Products</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+body{
+    margin:0;
+    font-family:'Montserrat',sans-serif;
+    background:#fafafa;
+    color:#333;
+}
+
+/* HEADER */
+header{
+    background:#ffffff;
+    padding:25px;
+    text-align:center;
+    border-bottom:1px solid #eee;
+}
+header h1{
+    margin:0;
+    font-size:32px;
+}
+header p{
+    color:#777;
+}
+
+/* SHOP GRID */
+.shop{
+    max-width:1200px;
+    margin:auto;
+    padding:40px 20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+/* PRODUCT CARD */
+.product{
+    background:white;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    overflow:hidden;
+    transition:0.3s;
+}
+.product:hover{
+    transform:translateY(-6px);
+}
+
+/* IMAGE */
+.product img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+}
+
+/* INFO */
+.info{
+    padding:20px;
+}
+.info h3{
+    margin:0 0 8px;
+    font-size:18px;
+}
+.price{
+    font-size:18px;
+    font-weight:600;
+    color:#c2185b;
+}
+.old{
+    text-decoration:line-through;
+    color:#aaa;
+    font-size:14px;
+    margin-left:8px;
+}
+
+/* BENEFITS */
+.benefits{
+    margin:12px 0;
+    padding-left:18px;
+    font-size:14px;
+}
+.benefits li{
+    margin-bottom:6px;
+}
+
+/* BUTTON */
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    background:#c2185b;
+    color:white;
+    font-size:15px;
+    border-radius:6px;
+    cursor:pointer;
+}
+button:hover{
+    background:#a3154b;
+}
+
+/* IN SALON USE */
+.use-section{
+    background:#fff;
+    padding:40px 20px;
+    border-top:1px solid #eee;
+}
+.use-section h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+.use-grid{
+    max-width:1000px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+.use-card{
+    text-align:center;
+}
+.use-card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:10px;
+}
+.use-card h4{
+    margin:12px 0 5px;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:15px;
+    color:#777;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Professional Hair Salon Products</h1>
+    <p>Used by experts • Safe • Effective</p>
+</header>
+
+<div class="shop">
+
+    <div class="product">
+        <img src="Keratin Smooth Shampoo.jpg">
+        <div class="info">
+            <h3>Keratin Smooth Shampoo</h3>
+            <div class="price">₹899 <span class="old">₹1,199</span></div>
+            <ul class="benefits">
+                <li>Controls frizz</li>
+                <li>Strengthens damaged hair</li>
+                <li>Salon-grade formula</li>
+            </ul>
+            <button>Buy Now</button>
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="Professional Hair Growth Oil.jpg">
+        <div class="info">
+            <h3>Professional Hair Growth Oil</h3>
+            <div class="price">₹649 <span class="old">₹899</span></div>
+            <ul class="benefits">
+                <li>Used in scalp massage</li>
+                <li>Reduces hair fall</li>
+                <li>Boosts growth</li>
+            </ul>
+            <button>Buy Now</button>
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="Repair Hair Mask.jpg">
+        <div class="info">
+            <h3>Repair Hair Mask</h3>
+            <div class="price">₹1,099 <span class="old">₹1,499</span></div>
+            <ul class="benefits">
+                <li>Deep conditioning</li>
+                <li>Used in salon spa</li>
+                <li>Makes hair soft</li>
+            </ul>
+            <button>Buy Now</button>
+        </div>
+    </div>
+
+</div>
+
+<div class="use-section">
+    <h2>Used in Our Hair Salon</h2>
+    <div class="use-grid">
+        <div class="use-card">
+            <img src="wash hair.jpg">
+            <h4>Hair Wash & Scalp Care</h4>
+            <p>Used during professional cleansing.</p>
+        </div>
+        <div class="use-card">
+            <img src="HAIR SPA.jpeg">
+            <h4>Hair Spa Treatment</h4>
+            <p>Applied in repair & nourishment therapy.</p>
+        </div>
+        <div class="use-card">
+            <img src="finish.jpg">
+            <h4>Styling & Finish</h4>
+            <p>Used before heat styling.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    © 2026 Hair Salon
+</footer>
+
+</body>
+</html>

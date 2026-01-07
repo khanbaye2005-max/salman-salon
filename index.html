@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Salman Salon</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: url('BG.jpg') no-repeat center center/cover;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: rgba(255,255,255,0.8);
+}
+
+.header h1 {
+    color: red;
+    font-size: 50px;
+    text-align: center;
+    flex: 1;
+    margin: 0;
+    text-decoration: underline;
+}
+
+.header img {
+    width: 150px;
+    height: 120px;
+    border-radius: 20px;
+}
+
+/* MARQUEE EFFECT */
+.tagline {
+    background: black;
+    color: #00ffcc;
+    font-size: 22px;
+    padding: 10px;
+    text-align: center;
+    animation: slide 6s infinite alternate;
+}
+
+@keyframes slide {
+    from {letter-spacing: 1px;}
+    to {letter-spacing: 4px;}
+}
+
+/* NAVIGATION */
+.topnav {
+    background: green;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.topnav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.topnav a:hover {
+    background: darkgreen;
+    border-radius: 5px;
+}
+
+/* GALLERY */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* FOOTER */
+.footer {
+    background: #222;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+.footer h2 {
+    margin-bottom: 10px;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <img src="salman logo.jpg" alt="Logo">
+    <h1>SALMAN SALON</h1>
+    <img src="salman logo.jpg" alt="Logo">
+</div>
+
+<!-- TAGLINE -->
+<div class="tagline">
+    Style never sleeps. Neither do we. 24/7 expert cuts available now.
+</div>
+
+<!-- NAVIGATION -->
+<div class="topnav">
+    <a href="https://maps.app.goo.gl/tLnDjV9JN3d1ixqw6" target="_blank">Home</a>
+    <a href="About us.html" target="_blank">About Us</a>
+    <a href="SERVICES AI.html" target="_blank">Services</a>
+    <a href="eshop.html" target="_blank">E-Shop</a>
+    <a href="Academy.html" target="_blank">Academy</a>
+    <a href="contact.html" target="_blank">Contact</a>
+</div>
+
+<!-- GALLERY -->
+<div class="gallery">
+    <img src="galery 1.jpg">
+    <img src="galery 2.jpg">
+    <img src="HAIR SPA.jpeg">
+    <img src="galery 4.jpg">
+    <img src="1.jpg">
+    <img src="2.jpg">
+    <img src="3.jpg">
+    <img src="4.jpg">
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+    <h2>Contact Us</h2>
+    <p>📞 Phone: 7009714395</p>
+    <p>📧 Email: khanbaye2005@gmail.com</p>
+</div>
+
+</body>
+</html>

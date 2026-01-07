@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ACADEMY</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+/* ---------- BODY ---------- */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('BG.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+/* ---------- HEADER ---------- */
+header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 40px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+header img {
+    height: 60px;
+}
+
+header h1 {
+    font-size: 28px;
+    margin: 0;
+    color: #FFD700;
+}
+
+/* ---------- GALLERY ---------- */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.item {
+    max-width: 500px;
+    background: rgba(0, 0, 0, 0.65);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.item img {
+    width: 100%;
+    border-radius: 18px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+}
+
+.title {
+    margin-top: 15px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #FFD700;
+}
+
+.description {
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 10px 0 15px;
+}
+
+/* ---------- BUTTON ---------- */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #FFD700;
+    color: black;
+    font-weight: 600;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+}
+
+/* ---------- VERIFICATION ---------- */
+.verify-section {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 40px;
+    text-align: center;
+}
+
+.verify-section h2 {
+    color: #FFD700;
+}
+
+.verify-section input {
+    padding: 12px;
+    width: 250px;
+    border-radius: 8px;
+    border: none;
+    margin: 10px;
+}
+
+.result {
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .gallery {
+        padding: 20px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+    <img src="academy logo.jpg" alt="Academy Logo">
+    <h1>TEN X SALON & ACADEMY</h1>
+</header>
+
+<!-- ===== CERTIFICATE GALLERY ===== -->
+<div class="gallery">
+
+    <div class="item">
+        <img src="Register certificate.jpg" alt="Registration Certificate">
+        <div class="title">Registration Certificate</div>
+        <div class="description">
+            Confirms official enrollment in our academy and validates student identity
+            under professional training programs.
+        </div>
+        <a class="btn" href="Register certificate.jpg" download>
+            Download Certificate
+        </a>
+    </div>
+
+    <div class="item">
+        <img src="certificate.jpg" alt="Course Certificate">
+        <div class="title">Course Completion Certificate</div>
+        <div class="description">
+            Awarded after successful course completion. Recognized for skill
+            development and academic achievement.
+        </div>
+        <a class="btn" href="certificate.jpg" download>
+            Download Certificate
+        </a>
+    </div>
+
+</div>
+
+<!-- ===== CERTIFICATE VERIFICATION ===== -->
+<div class="verify-section">
+    <h2>Certificate Verification</h2>
+    <p>Enter Certificate ID to verify authenticity</p>
+
+    <input type="text" id="certId" placeholder="Enter Certificate ID">
+    <button class="btn" onclick="verify()">Verify</button>
+
+    <div class="result" id="result"></div>
+</div>
+
+<!-- ===== SCRIPT ===== -->
+<script>
+function verify() {
+    const validCertificates = {
+        "ABC123": "Valid Certificate – Registered Student",
+        "XYZ789": "Valid Certificate – Course Completed"
+    };
+
+    const input = document.getElementById("certId").value;
+    const result = document.getElementById("result");
+
+    if (validCertificates[input]) {
+        result.style.color = "#00ff99";
+        result.innerHTML = validCertificates[input];
+    } else {
+        result.style.color = "#ff6666";
+        result.innerHTML = "Invalid Certificate ID";
+    }
+}
+</script>
+
+</body>
+</html>

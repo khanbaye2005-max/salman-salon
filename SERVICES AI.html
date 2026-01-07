@@ -1,0 +1,244 @@
+<html>
+<head>
+    <title>Salon Services</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('BG.jpg');
+        }
+
+        /* Header */
+        header {
+            background: ;
+            color: Black;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Section Titles */
+        h2 {
+            text-align: center;
+            color: red;
+            margin-top: 40px;
+            text-decoration: underline;
+        }
+
+        /* Services Table */
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        th, td {
+            padding: 15px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        th {
+            background: Black;
+            color: white;
+        }
+
+        tr:hover {
+            background: #f1f1f1;
+        }
+
+        /* Offers */
+        .offers {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 30px;
+            flex-wrap: wrap;
+        }
+
+        .offer-box {
+            background: nil;
+            width: 300px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        .offer-box h3 {
+            color: Green;
+            text-align: center;
+        }
+
+        /* Gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 30px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        /* Booking */
+        .booking {
+            background:#F0FFF0;
+            width: 80%;
+            margin: 40px auto;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            border-radius: 10px;
+        }
+
+        .booking table {
+            width: 100%;
+            box-shadow: none;
+        }
+
+        input, select {
+            width: 90%;
+            padding: 8px;
+            margin: 5px;
+        }
+
+        input[type="radio"] {
+            width: auto;
+        }
+
+        .btn {
+            background: red;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-weight: bold;
+            margin: 10px;
+        }
+
+        .btn:hover {
+            opacity: 0.8;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1><u>SALON SERVICES</u></h1>
+</header>
+
+<!-- SERVICES TABLE -->
+<table>
+    <tr>
+        <th>S.No</th>
+        <th>Services</th>
+        <th>Price (₹)</th>
+    </tr>
+    <tr><td>1</td><td>Hair Cut & Finish</td><td>200</td></tr>
+    <tr><td>2</td><td>Hair Colour</td><td>150</td></tr>
+    <tr><td>3</td><td>Hair Texture</td><td>250</td></tr>
+    <tr><td>4</td><td>Hair Treatments</td><td>550</td></tr>
+    <tr><td>5</td><td>Hair Spa</td><td>250</td></tr>
+    <tr><td>6</td><td>Shampoo & Conditioning</td><td>350</td></tr>
+    <tr><td>7</td><td>Advanced Head Massage</td><td>550</td></tr>
+    <tr><td>8</td><td>Beard Styling</td><td>250</td></tr>
+    <tr><td>9</td><td>Hair/Beard Colouring</td><td>450</td></tr>
+</table>
+
+<!-- OFFERS -->
+<h2>Special Offers</h2>
+<div class="offers">
+    <div class="offer-box">
+        <h3>Men's Offers</h3>
+        <p>✔ Hair Cut + Beard Styling @ ₹399</p>
+        <p>✔ Hair Spa + Massage @ ₹499</p>
+        <p>✔ 20% OFF on Hair Colour</p>
+    </div>
+
+    <div class="offer-box">
+        <h3>Women's Offers</h3>
+        <p>✔ Hair Cut + Spa @ ₹599</p>
+        <p>✔ Hair Colour @ 30% OFF</p>
+        <p>✔ Bridal Package Discount</p>
+    </div>
+</div>
+
+<!-- GALLERY -->
+<h2>Image Gallery</h2>
+<div class="gallery">
+    <img src="g1.jpg">
+    <img src="g2.jpg">
+    <img src="g3.jpg">
+    <img src="g4.jpg">
+</div>
+
+<!-- BOOKING -->
+<h2>Online Booking</h2>
+<div class="booking">
+    <form>
+        <table>
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" required></td>
+                <td>Last Name</td>
+                <td><input type="text" required></td>
+            </tr>
+
+            <tr>
+                <td>Gender</td>
+                <td colspan="3">
+                    <input type="radio" name="gender" required> Male
+                    <input type="radio" name="gender"> Female
+                </td>
+            </tr>
+
+            <tr>
+                <td>Service</td>
+                <td colspan="3">
+                    <select required>
+                        <option>Select Service</option>
+                        <option>Hair Cut & Finish</option>
+                        <option>Hair Colour</option>
+                        <option>Hair Spa</option>
+                        <option>Beard Styling</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Date</td>
+                <td><input type="date" required></td>
+                <td>Time</td>
+                <td><input type="time" required></td>
+            </tr>
+
+            <tr>
+                <td colspan="4">
+                    <button class="btn">BOOK NOW</button>
+                    <button class="btn" type="reset">CLEAR</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<footer>
+    © COPA CLASS PROJECT - 6 | Designed by Hav B R REDDY & TEAM
+</footer>
+
+</body>
+</html>
